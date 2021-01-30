@@ -1,13 +1,17 @@
-import './App.css';
+import React from "react";
+import HomePage from "./components/pages/HomePage";
+import LoginPage from "./components/pages/LoginPage";
+import RecipePage from "./components/pages/RecipePage";
+import {Route} from "react-router-dom";
+/*import logo from './logo.svg';
+import './App.css'; */
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-          Yoooo
-      </header>
-    </div>
-  );
-}
 
-export default App;
+const App = () => 
+  <div className="ui container">
+        <Route path="/" exact component={HomePage} />
+        <Route path="/login" exact component={LoginPage} />
+        <Route path="/recipes" exact component={RecipePage} />
+  </div>;
+  
+export default App; 
