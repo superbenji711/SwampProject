@@ -1,5 +1,16 @@
 .recipes {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: wheat;
+    padding: 10px;
+    justify-content: space-around; 
+}
+
+.recipeItem {
+    background-color: wheat;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
 }

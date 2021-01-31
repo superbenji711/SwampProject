@@ -7,7 +7,7 @@ const FoodFilters = () => {
         <div>
             <form>
                 <label for="quantity">Select Time:</label>
-                <select >
+                <select>
                     <option value="0-20">0-20 Minutes</option>
                     <option value="20-40">20-40 Minutes</option>
                     <option value="40-60">40-60 Minutes</option>
