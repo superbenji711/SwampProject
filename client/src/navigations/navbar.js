@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import './NavBar.css';
-import { Grid, Segment, Button } from 'semantic-ui-react'
+import { Grid, Segment, Button, ButtonGroup } from 'semantic-ui-react'
 
 import 'semantic-ui-css/semantic.min.css';
 import ReactDOM from "react-dom";
@@ -11,30 +11,32 @@ import RecipePage from '../views/RecipePage';
 
 const NavBar = (props) => {
     return (
-        <div>
+        <div className={'container'}>
 
+            
             <Grid columns='equal' divided inverted padded>
                 <Grid.Row>
-                    <Grid.Column>
-                        <Button>
+                    
+                    <Grid.Column >
+                        {/* <Button className={'button1'} active inverted color={""}> */}
                             <h2>
-                                <Link to={'/'} className="nav-link">
+                                <Link active to={'/'} >
                                     Home
                                 </Link>
                             </h2>
-                        </Button>
+                        {/* </Button> */}
                     </Grid.Column>
-                    <Grid.Column>
-                        <Button>
+                    <Grid.Column className={'button1'}>
+                        <Button className={'button1'}>
                             <h2>
-                                <Link to={'/Profile'} className="nav-link">
+                                <Link to={'/Profile'}>
                                     Profile
                                 </Link>
                             </h2>
                         </Button>
                     </Grid.Column>
                     <Grid.Column>
-                        <Button>
+                        <Button className={'button1'}>
                             <h2>
                                 <Link to={'/recipes'} className="nav-link">
                                     Recipes
@@ -43,7 +45,7 @@ const NavBar = (props) => {
                         </Button>
                     </Grid.Column>
                     <Grid.Column>
-                        <Button>
+                        <Button className={'button1'}>
                             <h2>
                                 <Link to={'/login'} className="nav-link">
                                     LogIn

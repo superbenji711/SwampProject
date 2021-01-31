@@ -1,0 +1,14 @@
+.container{
+    background-color: grey;
+}
+
+.grid{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    
+}
+.button1{
+    width: 100%;
+    height: 100%;
+}

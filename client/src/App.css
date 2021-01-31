@@ -2,15 +2,12 @@
   text-align: center;
   background-color: grey;
   border-width: 10;
-  border-color: red;
 }
 
 .Apps {
   text-align: center;
-  background-color: olive;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
+  display: 'flex';
+
 }
 .body{
 

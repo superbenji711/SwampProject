@@ -1,0 +1,21 @@
+.profilePic{
+    /* align-items: center; */
+     align-self: center;
+     /* align-content: center; */
+    background-color: grey;
+}
+
+.container1{
+    background-color: rgb(14, 14, 126);
+    /* align-items: center;
+     align-self: center;
+     align-content: center;  */
+     /* align-content: center;
+     justify-content: center;
+     justify-items: center; */
+    text-align: center;
+}
+
+.descript{
+    text-align: left;
+}
