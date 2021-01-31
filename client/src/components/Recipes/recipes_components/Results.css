@@ -10,5 +10,7 @@
     padding-top: 20px;;
 }
 
-.recipeList {
+.card{
+    background-color: orange;
+    text-align: center;
 }
