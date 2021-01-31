@@ -4,7 +4,7 @@ import LoginPage from "./components/LogIn_SignUp/LoginPage";
 import RecipePage from "./components/Recipes/RecipePage";
 import SignupPage from "./components/LogIn_SignUp/Signup";
 import {Route} from "react-router-dom";
-import Dashboard from "./components/Dashboard/Dashboard";
+import Dashboard from "./components/dashboard/Dashboard";
 import Done from "./components/LogIn_SignUp/Done";
 
 /*import logo from './logo.svg';
