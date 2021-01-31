@@ -1,17 +1,28 @@
-import React, {Component, useState} from 'react';
-import {Header} from 'semantic-ui-react';
+import React, { Component, useState } from 'react';
+import { Header, Segment } from 'semantic-ui-react';
+import {Link} from "react-router-dom";
 
-const Home = async () =>{
+export default class Home extends React.Component {
+
+    render() {
+        const recepies = ["red", "blue", "green", "yellow"]
+        return (
+            <div>
+                <Header>
+                    Home Page
+                </Header>
+                <Segment>
+
+                    {recepies.map((recepie) => {
+                        <h2 className="text">{recepie}</h2>
+                    })}
 
 
-    return (
-        <Component>
-            <Header>
-                This is Home
-            </Header>
-        </Component>
-    )
+                </Segment>
+            </div>
+        );
+    }
 }
 
 
-export default Home;
+// export default Home;

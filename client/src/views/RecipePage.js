@@ -1,12 +1,11 @@
 import React from "react";
-import GridExample from "./recipes_components/GridExample";
-import SearchBar from "./recipes_components/SearchBar";
+import SearchBar from "../components/Recipes/recipes_components/SearchBar";
 import {Link} from "react-router-dom";
 import {GiMagnifyingGlass} from "react-icons/gi";
 import './RecipePage.css';
-import FoodFilters from './recipes_components/FoodFilters'
-import Header from './recipes_components/Header'
-import Results from './recipes_components/Results'
+import FoodFilters from '../components/Recipes/recipes_components/FoodFilters'
+import Header from '../components/Recipes/recipes_components/Header'
+import Results from '../components/Recipes/recipes_components/Results'
 
 const RecipePage = () => (
     <div>

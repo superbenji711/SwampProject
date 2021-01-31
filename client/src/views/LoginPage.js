@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Form, Message } from "semantic-ui-react";
-import Layout from "./Layout";
+import Layout from "../components/LogIn_SignUp/Layout";
 
 const LoginPage = () => (
         <Layout header ="Dashboard Log In">
