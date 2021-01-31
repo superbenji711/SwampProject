@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react';
 import { Header, Segment } from 'semantic-ui-react';
+import {Link} from "react-router-dom";
 
 export default class Home extends React.Component {
 
@@ -8,8 +9,8 @@ export default class Home extends React.Component {
         return (
             <div>
                 <Header>
-                    Whats on your mind
-            </Header>
+                    Home Page
+                </Header>
                 <Segment>
 
                     {recepies.map((recepie) => {

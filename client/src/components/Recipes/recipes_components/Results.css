@@ -1,0 +1,14 @@
+.recipe {
+    border: black 5px solid;
+    width: 300px;
+    border-radius: 10%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;;
+}
+
+.recipeList {
+}
