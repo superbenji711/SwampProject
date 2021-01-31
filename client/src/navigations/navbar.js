@@ -9,7 +9,7 @@ import Home from '../views/Home';
 import Profile from '../views/Profile';
 import RecipePage from '../views/RecipePage';
 
-const NavBar = (props) => {
+const navbar = (props) => {
     return (
         <div className={'container'}>
 
@@ -60,5 +60,5 @@ const NavBar = (props) => {
 
     )
 }
-export default NavBar;
+export default navbar;
 

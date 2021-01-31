@@ -20,7 +20,7 @@ const LoginPage = () => (
                 type="password"
                 className="auth-input-field"
             />
-            <Link to= "/dashboard">
+            <Link to= "/Profile">
                 <Button color="blue" fluid size="huge">
                     LOGIN
                 </Button>

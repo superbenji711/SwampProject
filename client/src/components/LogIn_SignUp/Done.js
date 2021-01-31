@@ -14,10 +14,10 @@ const Done = () => (
         
       </h1>
       <u1 style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-        Click here to continue to your Dashboard.
+        Click here to continue to your Profile page.
       </u1>
-     <Link to="/dashboard" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-        <Button content="DASHBOARD" primary="true">
+     <Link to="/Profile" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+        <Button content="PROFILE" primary="true">
         </Button>
       </Link>
 
