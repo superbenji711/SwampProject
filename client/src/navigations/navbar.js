@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import './NavBar.css';
+import './navbar.css';
 import { Grid, Segment, Button } from 'semantic-ui-react'
 
 import 'semantic-ui-css/semantic.min.css';

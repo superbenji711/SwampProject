@@ -17,15 +17,10 @@ const RecipePage = () => (
         <h1>
 
         </h1>
-        <GiMagnifyingGlass style={{float:'left'}}/>
-        <SearchBar style={{float:'left'}} />
+        
         
         <FoodFilters />
-        <div className="recipes">
-            <Results />
-            <Results />
-            <Results />
-            <Results />
+        <div>
             <Results />
         </div>
     </div>
