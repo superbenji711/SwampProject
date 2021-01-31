@@ -1,5 +1,6 @@
-import React from 'react'
-import { Grid, Image, Card, Icon } from 'semantic-ui-react'
+import React,{Component, useState} from 'react'
+import { Grid, Image, Card, Icon, Search, Header, Segment } from 'semantic-ui-react'
+import { Input } from 'semantic-ui-react'
 
 import './Results.css'
 
@@ -57,43 +58,40 @@ const Results = () => {
             "id": 8
         }
     ]
+
+    const [text, setText] = useState("");
     return (
-        <Grid centered={true} divided columns={'equal'} >
+        <div>
+            <div>
+            <Input value={text} onChange={(text)=>setText(text.target.value)}/>
+                
+                {console.log(text)}
+            </div>
+            <div>
+                <Grid centered={true}>
+                <Grid.Row columns={3}>
+                    {list.map((recipe, i) => (
+                            <Grid.Column >
+                                <Card.Group>
+                                    <Card centered key={i}>
+                                        <Card.Content header={recipe.name} />
+                                        <Image src={"https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"}
+                                            size='medium' centered ></Image>
+                                        <div className="card">
 
+                                            <Card.Description textAlign={true} content={recipe.ingredients.map((ingredient, i) => (
+                                                <div>{i + 1 + ". "}{ingredient}</div>
+                                            ))} />
 
-            {list.map((recipe, i) => (
-                <Grid.Row >
-                    <Grid.Column columns={2}>
-                        <Card.Group>
-                            <Card centered key={i}>
-
-                                <Card.Content header={recipe.name} />
-                                <Image  src={"https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"}
-                                size='medium'  centered ></Image>
-                                <div className="card">
-                                   
-                                    <Card.Description textAlign={true} content={recipe.ingredients.map((ingredient, i) => (
-                                        <div>{i+1 + ". "}{ingredient}</div>
-                                    ))} />
-
-                                </div>
-
-
-
-                                {/* <Card.Content key={i}>{recipe.ingredients.map((Ingredient)=>(
-                                {Ingredient}
-                            ))}</Card.Content> */}
-
-
-                            </Card>
-                        </Card.Group>
-                    </Grid.Column>
-                </Grid.Row>
-            ))}
-
-
-
-        </Grid>
+                                        </div>
+                                    </Card>
+                                </Card.Group>
+                            </Grid.Column>
+                    ))}
+                    </Grid.Row>
+                </Grid>
+            </div>
+        </div>
     )
 }
 

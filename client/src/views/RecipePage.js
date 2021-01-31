@@ -5,27 +5,23 @@ import {GiMagnifyingGlass} from "react-icons/gi";
 import './RecipePage.css';
 import FoodFilters from '../components/Recipes/recipes_components/FoodFilters'
 import Header from '../components/Recipes/recipes_components/Header'
-import Results from '../components/Recipes/recipes_components/Results'
+import Results from '../components/Recipes/recipes_components/Results';
+import {Icon} from 'semantic-ui-react';
 
 const RecipePage = () => (
     <div>
-        <Link to="/">
+        {/* <Link to="/">
             Back to home page
-        </Link>
+        </Link> */}
 
         <Header title="The Ultimate Cookbook" />
-        <h1>
-
-        </h1>
+{/* 
         <GiMagnifyingGlass style={{float:'left'}}/>
-        <SearchBar style={{float:'left'}} />
+        
+        <SearchBar Icon={'home'} style={{float:'left'}} /> */}
         
         <FoodFilters />
-        <div className="recipes">
-            <Results />
-            <Results />
-            <Results />
-            <Results />
+        <div >
             <Results />
         </div>
     </div>
