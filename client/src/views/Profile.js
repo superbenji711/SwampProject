@@ -1,17 +1,17 @@
 import React, {Component, useState} from 'react';
 import {Header} from 'semantic-ui-react';
 
-const Profile = async () =>{
+export default class Profile extends React.Component{
 
-
+    render() {
+        
     return (
-        <Component>
+        <div>
             <Header>
                 This is Profile
             </Header>
-        </Component>
-    )
+        </div>
+    );
+    }
 }
 
-
-export default Profile;
