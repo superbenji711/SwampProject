@@ -3,7 +3,7 @@ import GridExample from "./recipes_components/GridExample";
 import SearchBar from "./recipes_components/SearchBar";
 import {Link} from "react-router-dom";
 import {GiMagnifyingGlass} from "react-icons/gi";
-import './App.css';
+import './RecipePage.css';
 import FoodFilters from './recipes_components/FoodFilters'
 import Header from './recipes_components/Header'
 import Results from './recipes_components/Results'
@@ -13,7 +13,7 @@ const RecipePage = () => (
         <Link to="/">
             Back to home page
         </Link>
-        
+
         <Header title="The Ultimate Cookbook" />
         <h1>
 
