@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import './NavBar.css';
+import './navbar.css';
 import { Grid, Segment, Button } from 'semantic-ui-react'
 
 import 'semantic-ui-css/semantic.min.css';
@@ -9,7 +9,7 @@ import Home from '../views/Home';
 import Profile from '../views/Profile';
 import RecipePage from '../views/RecipePage';
 
-const NavBar = (props) => {
+const navbar = (props) => {
     return (
         <div>
 
@@ -58,5 +58,5 @@ const NavBar = (props) => {
 
     )
 }
-export default NavBar;
+export default navbar;
 

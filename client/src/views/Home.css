@@ -2,3 +2,22 @@
   .text {
     color: orange;
   }
+
+  .center-image{
+    display: "flex";
+    justifyContent: "center";
+    alignItems: "center";
+    height:500px;
+    width:500px;
+    background:orange;
+    position:relative;
+   }
+  
+  .center-image img{
+    max-width:100%;
+    max-height:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }

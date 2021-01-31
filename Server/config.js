@@ -3,7 +3,7 @@ const config = {
   development: {
     baseUrl: "localhost",
     port: process.env.PORT || 8080,
-    uri: 'mongodb+srv://superbenji711:BenjiPrime711@benjicluster-3iz70.mongodb.net/test?retryWrites=true&w=majority'
+    uri: 'mongodb+srv://AlvinGator:epicer34ii23@swamphacksrecipe.aldkz.mongodb.net/testing?retryWrites=true&w=majority'
   },
   production: {
     // port: process.env.
