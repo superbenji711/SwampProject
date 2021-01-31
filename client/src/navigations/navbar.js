@@ -13,12 +13,11 @@ const NavBar = (props) => {
     return (
         <div>
 
-            <Grid relaxed='very' columns={4}>
+            <Grid columns='equal' divided inverted padded>
                 <Grid.Row>
-                    
+
                     <Grid.Column>
                         <Button>
-
                             <h2>
                                 <Link to={'/'} className="nav-link">
                                     Home
@@ -30,10 +29,10 @@ const NavBar = (props) => {
                         <h2><Link to={'/Profile'} className="nav-link">Profile</Link></h2>
                     </Grid.Column>
                     <Grid.Column>
-                    <Button>
-                    <h2><Link to={'/Recipe'} className="nav-link">RecipePage</Link></h2>
+                        <Button>
+                            <h2><Link to={'/Recipe'} className="nav-link">RecipePage</Link></h2>
 
-                    </Button>
+                        </Button>
                     </Grid.Column>
                     <Grid.Column>
                         <Button>4</Button>
