@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./views/Home";
 import LoginPage from "./views/LoginPage";
 import RecipePage from "./views/RecipePage";
-import NavBar from './navigations/navbar';
+import NavBar from './navigations/NavBar';
 import SignupPage from "./components/LogIn_SignUp/Signup";
 import Dashboard from "./components/dashboard/Dashboard";
 import Done from "./components/LogIn_SignUp/Done";
