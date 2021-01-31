@@ -1,17 +1,19 @@
 import React, {Component, useState} from 'react';
 import {Header} from 'semantic-ui-react';
 
-const Home = async () =>{
+export default class Home extends React.Component{
 
-
+    render() {
+        
     return (
-        <Component>
+        <div>
             <Header>
                 This is Home
             </Header>
-        </Component>
-    )
+        </div>
+    );
+    }
 }
 
 
-export default Home;
+// export default Home;
