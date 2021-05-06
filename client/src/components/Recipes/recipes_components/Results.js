@@ -75,8 +75,8 @@ const Results = () => {
                                 <Card.Group>
                                     <Card centered key={i}>
                                         <Card.Content header={recipe.name} />
-                                        <Image src={"https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"}
-                                            size='medium' centered ></Image>
+                                        {/* <Image src={"https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"}
+                                            size='medium' centered ></Image> */}
                                         <div className="card">
 
                                             <Card.Description textAlign={true} content={recipe.ingredients.map((ingredient, i) => (
